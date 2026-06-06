@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-950 flex items-center justify-center px-6 text-white">
+
+    <!-- Login Card -->
+    <div class="w-full max-w-md rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl p-8">
+
+        <!-- Title -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-black tracking-wide">
+                Login
+            </h1>
+            <p class="mt-2 text-gray-400">
+                계정에 로그인하세요
+            </p>
+        </div>
+
+        <!-- Login Form -->
+        <form action="#" method="post" class="space-y-5">
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="block mb-2 text-sm font-semibold text-gray-300">
+                    Email
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    class="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400/30">
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label for="password" class="block mb-2 text-sm font-semibold text-gray-300">
+                    Password
+                </label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="비밀번호 입력"
+                    class="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400/30">
+            </div>
+
+            <!-- Options -->
+            <div class="flex items-center justify-between text-sm">
+                <label class="flex items-center gap-2 text-gray-300">
+                    <input type="checkbox" class="accent-red-500">
+                    로그인 유지
+                </label>
+
+                <a href="#" class="text-red-400 hover:text-red-300">
+                    비밀번호 찾기
+                </a>
+            </div>
+
+            <!-- Button -->
+            <button
+                type="submit"
+                class="w-full rounded-xl bg-red-600 py-3 font-bold hover:bg-red-700 transition">
+                로그인
+            </button>
+
+        </form>
+
+        <!-- Sign Up -->
+        <p class="mt-6 text-center text-sm text-gray-400">
+            계정이 없으신가요?
+            <a href="#" class="text-red-400 hover:text-red-300 font-semibold">
+                회원가입
+            </a>
+        </p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold text-center mb-8">스트리트파이터6 갤러리</h1>
+    <p class="text-center text-gray-600 mb-6 font-aria">스트리트파이터6의 다양한 캐릭터와 스크린샷을 확인해보세요.</p>
+    <!-- 메인 이미지-->
+    <div class="gird gap-4">
+        <div class="main-display">
+            <img id="topImage" class="w-full h-auto max-w-full object-cover object-center md:h-[900px]" src="/images/sf63.jpg">
+        </div>
+        <!-- 서브 이미지-->
+         <div class="thumbnail-list grid grid-cols-5 gap-3">
+            <img class="hover:scale-110 thumb w-full h-40 rounded-lg object-cover object-center cursor-pointer opacity-60 transition-opacity md:h-[240]" src="/images/sf61.jpg" alt="">
+            <img class="hover:scale-110 thumb w-full h-40 rounded-lg object-cover object-center cursor-pointer opacity-60 transition-opacity md:h-[240]" src="/images/sf62.jpg" alt="">
+            <img class="hover:scale-110 thumb w-full h-40 rounded-lg object-cover object-center cursor-pointer opacity-60 transition-opacity md:h-[240]" src="/images/sfa6.jpg" alt="">
+            <img class="hover:scale-110 thumb w-full h-40 rounded-lg object-cover object-center cursor-pointer opacity-60 transition-opacity md:h-[240]" src="/images/sf64.jpg" alt="">
+            <img class="hover:scale-110 thumb w-full h-40 rounded-lg object-cover object-center cursor-pointer opacity-60 transition-opacity md:h-[240]" src="/images/sf65.jpg" alt="">
+         </div>
+         
+    </div>
+    <!-- 스크립트 --> 
+    <script>
+        // 상위 큰 이미지 요소 선택
+        const topImage = document.getElementById("topImage");
+
+        // 하위 이미지들이 담긴 부모 요소 선택
+        const thumbList = document.querySelector(".thumbnail-list");
+
+        // 클릭 이벤트 리스너 추가 (이벤트 위임 활용)
+        thumbList.addEventListener("click", function (event) {
+
+            // 클릭된 요소가 "thumb" 클래스를 가진 이미지인지 확인
+            if (event.target.classList.contains("thumb")) {
+
+                // 클릭한 하위 이미지의 src를 상위 이미지의 src로 변경
+                topImage.src = event.target.src;
+            }
+        });
+    </script>
+</body>
+</html>

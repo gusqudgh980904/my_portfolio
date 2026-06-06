@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의 양식</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-950 text-white flex items-center justify-center px-6">
+
+    <!-- Contact Form Section -->
+    <section class="w-full max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+
+            <!-- Left Text Area -->
+            <div class="rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl p-10">
+                <p class="text-red-400 font-semibold mb-4">
+                    CONTACT US
+                </p>
+
+                <h1 class="text-4xl md:text-5xl font-black mb-6">
+                    궁금한 점이 있다면<br>
+                    문의해주세요
+                </h1>
+
+                <p class="text-gray-300 leading-relaxed mb-8">
+                    서비스 이용, 제휴, 오류 신고 등 다양한 문의를 남겨주시면
+                    확인 후 빠르게 답변드리겠습니다.
+                </p>
+
+                <div class="space-y-4 text-sm text-gray-300">
+                    <p>
+                        <span class="font-bold text-white">Email :</span>
+                        gusqudgh980904@naver.com
+                    </p>
+
+                    <p>
+                        <span class="font-bold text-white">Phone :</span>
+                        010-3891-2940
+                    </p>
+
+                    <p>
+                        <span class="font-bold text-white">Address :</span>
+                        Incheon, Korea
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Form Area -->
+            <div class="rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl p-8">
+
+                <form action="#" method="post" class="space-y-5">
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-semibold text-gray-300">
+                            이름
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="이름을 입력하세요"
+                            class="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400/30">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-semibold text-gray-300">
+                            이메일
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            class="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400/30">
+                    </div>
+
+                    <!-- Category -->
+                    <div>
+                        <label for="category" class="block mb-2 text-sm font-semibold text-gray-300">
+                            문의 유형
+                        </label>
+                        <select
+                            id="category"
+                            name="category"
+                            class="w-full rounded-xl bg-gray-900 border border-white/20 px-4 py-3 text-white outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400/30">
+                            <option>일반 문의</option>
+                            <option>서비스 문의</option>
+                            <option>오류 신고</option>
+                            <option>제휴 문의</option>
+                        </select>
+                    </div>
+
+                    <!-- Title -->
+                    <div>
+                        <label for="title" class="block mb-2 text-sm font-semibold text-gray-300">
+                            제목
+                        </label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            placeholder="문의 제목을 입력하세요"
+                            class="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400/30">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-semibold text-gray-300">
+                            문의 내용
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="문의 내용을 입력하세요"
+                            class="w-full resize-none rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-gray-500 outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400/30"></textarea>
+                    </div>
+
+                    <!-- Agree -->
+                    <label class="flex items-start gap-3 text-sm text-gray-300">
+                        <input type="checkbox" class="mt-1 accent-red-500">
+                        <span>
+                            개인정보 수집 및 이용에 동의합니다.
+                        </span>
+                    </label>
+
+                    <!-- Button -->
+                    <button
+                        type="submit"
+                        class="w-full rounded-xl bg-red-600 py-3 font-bold hover:bg-red-700 transition">
+                        문의 보내기
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
