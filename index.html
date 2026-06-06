@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-950 text-white">
+
+    <!-- Background Area -->
+    <div class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('/images/assignment3/tekken8_bg3.png')">
+
+        <!-- Header -->
+        <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/10 border-b border-white/20">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+                <h1 class="text-2xl font-bold italic tracking-widest">TEKKEN8</h1>
+
+                <nav class="hidden md:flex gap-8 text-sm">
+                    <a href="/assignment3_html/TeamSection2.html" class="hover:text-red-400">TeamSection</a>
+                    <a href="/assignment3_html/gallery.html" class="hover:text-red-400">Gallery</a>
+                </nav>
+                <div class="relative group">
+                    <button class="hover:text-red-400 flex items-center gap-1">
+                        More
+                        <span class="text-xs">▼</span>
+                    </button>
+
+                    <div class="absolute left-0 top-full mt-3 w-52 rounded-2xl
+                                backdrop-blur-xl bg-black/70 border border-white/20
+                                shadow-2xl opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-300 overflow-hidden z-50">
+
+                        <a href="/assignment3_html/Profile.html"
+                        class="block px-5 py-3 hover:bg-red-500/20 hover:text-red-400">
+                            Profile
+                        </a>
+
+                        <a href="/assignment3_html/TeamSection.html"
+                        class="block px-5 py-3 hover:bg-red-500/20 hover:text-red-400">
+                            TeamSection
+                        </a>
+
+                        <a href="/assignment3_html/gallery.html"
+                        class="block px-5 py-3 hover:bg-red-500/20 hover:text-red-400">
+                            Gallery
+                        </a>
+
+                        <a href="/assignment3_html/Login.html"
+                        class="block px-5 py-3 hover:bg-red-500/20 hover:text-red-400">
+                            Login
+                        </a>
+                        <a href="/assignment3_html/Inquiry_form.html"
+                        class="block px-5 py-3 hover:bg-red-500/20 hover:text-red-400">
+                            inquiry form
+                        </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 px-6">
+            <div class="max-w-7xl mx-auto w-full gap-10 items-center">
+
+                <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-10 shadow-2xl">
+                    <p class="text-red-400 font-semibold mb-4">NEW FIGHTING GAME</p>
+
+                    <h2 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+                        GET READY FOR<br>
+                        THE NEXT BATTLE!
+                    </h2>
+
+                    <p class="text-gray-300 mb-8">
+                        강력한 캐릭터, 화려한 콤보, 박진감 넘치는 전투를 경험하세요.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bento Grid -->
+        <section class="px-6 pb-20">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+
+                <div class="md:col-span-2 rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-8">
+                    <h3 class="text-3xl font-bold mb-4">Dynamic Battle System</h3>
+                    <p class="text-gray-300">공중콤보, 히트시스템을 활용한 전략적인 전투 시스템.</p>
+                </div>
+
+                <div class="rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-8">
+                    <h3 class="text-2xl font-bold mb-4">Rank Match</h3>
+                    <p class="text-gray-300">전 세계 유저와 실력을 겨뤄보세요.</p>
+                </div>
+
+                <div class="rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-8">
+                    <h3 class="text-2xl font-bold mb-4">Story Mode</h3>
+                    <p class="text-gray-300">캐릭터별 고유 스토리를 즐길 수 있습니다.</p>
+                </div>
+
+                <div class="md:col-span-2 rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-8">
+                    <h3 class="text-3xl font-bold mb-4">Special Style</h3>
+                    <p class="text-gray-300">초보들도 쉽게 화려한 콤보와 강력한 필살기를 쓸수있는 모드.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Character Section -->
+        <section class="px-6 pb-24">
+            <div class="max-w-7xl mx-auto">
+
+                <h2 class="text-4xl font-black mb-10 text-center">Characters</h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Character Card -->
+                    <div class="character-card rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-5 cursor-pointer hover:bg-white/20 transition"
+                         data-name="Hwoarang"
+                         data-style="태권도"
+                         data-country="한국"
+                         data-desc="빠르고 강력한 압박을하는 캐릭터입니다.">
+
+                        <div class="character-img h-72 rounded-2xl bg-white/10 flex items-center justify-center mb-5">
+                            <img src="/images/assignment3/hwoarang.jpg" alt="Hwoarang" class="w-full h-full object-cover">
+                        </div>
+
+                        <h3 class="text-2xl font-bold">Hwoarang</h3>
+
+                        <div class="character-info hidden mt-4 text-sm text-gray-300 space-y-2">
+                            <p><strong>격투 스타일:</strong> <span class="style"></span></p>
+                            <p><strong>국적:</strong> <span class="country"></span></p>
+                            <p class="desc"></p>
+                        </div>
+                    </div>
+
+                    <div class="character-card rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-5 cursor-pointer hover:bg-white/20 transition"
+                         data-name="Nina Williams"
+                         data-style="암살 격투술"
+                         data-country="아일랜드"
+                         data-desc="빠른 연속기와 잡기 기술에 특화된 캐릭터입니다.">
+
+                        <div class="character-img h-72 rounded-2xl bg-white/10 flex items-center justify-center mb-5">
+                            <img src="/images/assignment3/nina.jpg" alt="Nina Williams" class="w-full h-full object-cover">
+                        </div>
+
+                        <h3 class="text-2xl font-bold">Nina</h3>
+
+                        <div class="character-info hidden mt-4 text-sm text-gray-300 space-y-2">
+                            <p><strong>격투 스타일:</strong> <span class="style"></span></p>
+                            <p><strong>국적:</strong> <span class="country"></span></p>
+                            <p class="desc"></p>
+                        </div>
+                    </div>
+
+                    <div class="character-card rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-5 cursor-pointer hover:bg-white/20 transition"
+                         data-name="Fahkumram"
+                         data-style="무에타이"
+                         data-country="태국"
+                         data-desc="강력한 한 방 데미지를 가진 파워형 캐릭터입니다.">
+
+                        <div class="character-img h-72 rounded-2xl bg-white/10 flex items-center justify-center mb-5">
+                            <img src="/images/assignment3/fahkumram.jpeg" alt="Fahkumram" class="w-full h-full object-cover">
+                        </div>
+
+                        <h3 class="text-2xl font-bold">Fahkumram</h3>
+
+                        <div class="character-info hidden mt-4 text-sm text-gray-300 space-y-2">
+                            <p><strong>격투 스타일:</strong> <span class="style"></span></p>
+                            <p><strong>국적:</strong> <span class="country"></span></p>
+                            <p class="desc"></p>
+                        </div>
+                    </div>
+
+                    <div class="character-card rounded-3xl backdrop-blur-xl bg-white/10 border border-white/20 p-5 cursor-pointer hover:bg-white/20 transition"
+                         data-name="King"
+                         data-style="프로레슬링"
+                         data-country="멕시코"
+                         data-desc="시그니처인 연속 잡기 기술과 압박 플레이에 강한 캐릭터입니다.">
+
+                        <div class="character-img h-72 rounded-2xl bg-white/10 flex items-center justify-center mb-5">
+                            <img src="/images/assignment3/king.jpg" alt="King" class="w-full h-full object-cover">
+                        </div>
+
+                        <h3 class="text-2xl font-bold">King</h3>
+
+                        <div class="character-info hidden mt-4 text-sm text-gray-300 space-y-2">
+                            <p><strong>격투 스타일:</strong> <span class="style"></span></p>
+                            <p><strong>국적:</strong> <span class="country"></span></p>
+                            <p class="desc"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll(".character-card");
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                const currentInfo = card.querySelector(".character-info");
+                const isOpen = !currentInfo.classList.contains("hidden");
+
+                // 1. 모든 카드 정보 닫기
+                cards.forEach(otherCard => {
+                    const otherInfo = otherCard.querySelector(".character-info");
+                    otherInfo.classList.add("hidden");
+                });
+
+                // 2. 이미 열려 있던 카드를 다시 누른 거면 그대로 닫힌 상태 유지
+                if (isOpen) {
+                    return;
+                }
+
+                // 3. 클릭한 카드에 데이터 넣기
+                card.querySelector(".style").textContent = card.dataset.style;
+                card.querySelector(".country").textContent = card.dataset.country;
+                card.querySelector(".desc").textContent = card.dataset.desc;
+
+                // 4. 클릭한 카드만 열기
+                currentInfo.classList.remove("hidden");
+            });
+        });
+    </script>
+
+</body>
+</html>
